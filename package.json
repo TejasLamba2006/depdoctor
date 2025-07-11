@@ -1,0 +1,41 @@
+{
+    "name": "depdoctor",
+    "version": "1.0.0",
+    "description": "A CLI tool that scans dependencies and reports which ones can be safely updated",
+    "main": "bin/index.js",
+    "bin": {
+        "depdoctor": "bin/index.js"
+    },
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc --watch",
+        "prepublishOnly": "bun run build"
+    },
+    "keywords": [
+        "dependencies",
+        "npm",
+        "update",
+        "cli",
+        "package",
+        "version",
+        "check"
+    ],
+    "author": "",
+    "license": "MIT",
+    "engines": {
+        "node": ">=14.0.0"
+    },
+    "dependencies": {
+        "commander": "^11.1.0",
+        "semver": "^7.7.2"
+    },
+    "devDependencies": {
+        "@types/node": "^20.10.5",
+        "@types/semver": "^7.7.0",
+        "typescript": "^5.8.3"
+    },
+    "files": [
+        "bin/",
+        "README.md"
+    ]
+}
